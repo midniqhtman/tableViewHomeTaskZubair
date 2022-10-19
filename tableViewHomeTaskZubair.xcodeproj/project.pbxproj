@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		08180DA229001F1D00FDD0AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08180DA129001F1D00FDD0AC /* AppDelegate.swift */; };
 		08180DA429001F1D00FDD0AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08180DA329001F1D00FDD0AC /* SceneDelegate.swift */; };
-		08180DA629001F1D00FDD0AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08180DA529001F1D00FDD0AC /* ViewController.swift */; };
 		08180DA929001F1D00FDD0AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08180DA729001F1D00FDD0AC /* Main.storyboard */; };
 		08180DAB29001F1F00FDD0AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08180DAA29001F1F00FDD0AC /* Assets.xcassets */; };
 		08180DAE29001F1F00FDD0AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08180DAC29001F1F00FDD0AC /* LaunchScreen.storyboard */; };
+		08180DBA2900200800FDD0AC /* PersonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08180DB92900200700FDD0AC /* PersonsTableViewController.swift */; };
+		08180DBF290020BC00FDD0AC /* Persons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08180DBE290020BC00FDD0AC /* Persons.swift */; };
+		08180DC22900920800FDD0AC /* PersonsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08180DC12900920800FDD0AC /* PersonsDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08180D9E29001F1D00FDD0AC /* tableViewHomeTaskZubair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableViewHomeTaskZubair.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08180DA129001F1D00FDD0AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08180DA329001F1D00FDD0AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		08180DA529001F1D00FDD0AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		08180DA829001F1D00FDD0AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08180DAA29001F1F00FDD0AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08180DAD29001F1F00FDD0AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08180DAF29001F1F00FDD0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08180DB92900200700FDD0AC /* PersonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsTableViewController.swift; sourceTree = "<group>"; };
+		08180DBE290020BC00FDD0AC /* Persons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persons.swift; sourceTree = "<group>"; };
+		08180DC12900920800FDD0AC /* PersonsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		08180DA029001F1D00FDD0AC /* tableViewHomeTaskZubair */ = {
 			isa = PBXGroup;
 			children = (
-				08180DA129001F1D00FDD0AC /* AppDelegate.swift */,
-				08180DA329001F1D00FDD0AC /* SceneDelegate.swift */,
-				08180DA529001F1D00FDD0AC /* ViewController.swift */,
-				08180DA729001F1D00FDD0AC /* Main.storyboard */,
-				08180DAA29001F1F00FDD0AC /* Assets.xcassets */,
-				08180DAC29001F1F00FDD0AC /* LaunchScreen.storyboard */,
-				08180DAF29001F1F00FDD0AC /* Info.plist */,
+				08180DC0290020C600FDD0AC /* Model */,
+				08180DBD290020A900FDD0AC /* View */,
+				08180DB829001F8000FDD0AC /* ViewControllers */,
+				08180DB529001F3C00FDD0AC /* SupportingFiles */,
+				08180DB629001F4C00FDD0AC /* Storyboards */,
 			);
 			path = tableViewHomeTaskZubair;
+			sourceTree = "<group>";
+		};
+		08180DB529001F3C00FDD0AC /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				08180DAA29001F1F00FDD0AC /* Assets.xcassets */,
+				08180DA129001F1D00FDD0AC /* AppDelegate.swift */,
+				08180DA329001F1D00FDD0AC /* SceneDelegate.swift */,
+				08180DAF29001F1F00FDD0AC /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		08180DB629001F4C00FDD0AC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				08180DA729001F1D00FDD0AC /* Main.storyboard */,
+				08180DAC29001F1F00FDD0AC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		08180DB829001F8000FDD0AC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				08180DB92900200700FDD0AC /* PersonsTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		08180DBD290020A900FDD0AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				08180DC12900920800FDD0AC /* PersonsDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		08180DC0290020C600FDD0AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				08180DBE290020BC00FDD0AC /* Persons.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +140,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
@@ -138,8 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08180DA629001F1D00FDD0AC /* ViewController.swift in Sources */,
+				08180DBA2900200800FDD0AC /* PersonsTableViewController.swift in Sources */,
+				08180DC22900920800FDD0AC /* PersonsDetailsViewController.swift in Sources */,
 				08180DA229001F1D00FDD0AC /* AppDelegate.swift in Sources */,
+				08180DBF290020BC00FDD0AC /* Persons.swift in Sources */,
 				08180DA429001F1D00FDD0AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +340,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U5GTXVYV6H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = tableViewHomeTaskZubair/Info.plist;
+				INFOPLIST_FILE = tableViewHomeTaskZubair/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +368,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U5GTXVYV6H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = tableViewHomeTaskZubair/Info.plist;
+				INFOPLIST_FILE = tableViewHomeTaskZubair/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
