@@ -48,23 +48,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4f-M7-oVV">
-                                <rect key="frame" x="174" y="411.66666666666669" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4f-M7-oVV">
+                                <rect key="frame" x="16" y="91" width="358" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="lmR-HN-NsC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Z4P-or-djK">
+                                <rect key="frame" x="16.000000000000007" y="161" width="126.66666666666669" height="48.666666666666657"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="q0h-LJ-jR3">
+                                        <rect key="frame" x="0.0" y="0.0" width="99" height="20.333333333333332"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZc-EP-uvp">
+                                                <rect key="frame" x="0.0" y="0.0" width="53" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61E-LG-VKP">
+                                                <rect key="frame" x="68" y="0.0" width="31" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5bF-DZ-8vh">
+                                        <rect key="frame" x="0.0" y="28.333333333333343" width="126.66666666666667" height="20.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Oo-XB-UQk">
+                                                <rect key="frame" x="0.0" y="0.0" width="45.333333333333336" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@mail.ru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cec-ad-37e">
+                                                <rect key="frame" x="60.333333333333336" y="0.0" width="66.333333333333314" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZXT-kU-aMQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="x4f-M7-oVV" firstAttribute="centerY" secondItem="zqo-yJ-WGw" secondAttribute="centerY" id="Hcr-M2-r5J"/>
-                            <constraint firstItem="x4f-M7-oVV" firstAttribute="centerX" secondItem="zqo-yJ-WGw" secondAttribute="centerX" id="Hdp-dz-RxW"/>
+                            <constraint firstItem="x4f-M7-oVV" firstAttribute="leading" secondItem="ZXT-kU-aMQ" secondAttribute="leading" constant="16" id="4pB-rM-aSn"/>
+                            <constraint firstItem="Z4P-or-djK" firstAttribute="leading" secondItem="ZXT-kU-aMQ" secondAttribute="leading" constant="16" id="YyL-Ux-HZx"/>
+                            <constraint firstItem="Z4P-or-djK" firstAttribute="top" secondItem="x4f-M7-oVV" secondAttribute="bottom" constant="22" id="hXL-hw-wNH"/>
+                            <constraint firstItem="ZXT-kU-aMQ" firstAttribute="trailing" secondItem="x4f-M7-oVV" secondAttribute="trailing" constant="16" id="y9e-eI-Waf"/>
+                            <constraint firstItem="x4f-M7-oVV" firstAttribute="top" secondItem="ZXT-kU-aMQ" secondAttribute="top" id="zVa-HG-Ij6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wWx-hw-bWu"/>
                     <connections>
+                        <outlet property="mailLabel" destination="cec-ad-37e" id="Kn4-UB-V5Q"/>
                         <outlet property="nameLabel" destination="x4f-M7-oVV" id="vCI-u8-ga9"/>
+                        <outlet property="numberLabel" destination="61E-LG-VKP" id="M4D-bf-R4j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N4o-gH-eju" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
